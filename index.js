@@ -3,7 +3,7 @@ const turbo = require('turbo-http')
 const serverRouter = require('server-router')
 const stringify = require('fast-safe-stringify')
 
-class Ster {
+class Theodore {
   constructor (opts) {
     this.opts = opts || {}
     this.router = serverRouter({ default: '/notFoundHandlerRoute' })
@@ -63,4 +63,4 @@ class Ster {
   }
 }
 
-module.exports = Ster
+module.exports = Theodore

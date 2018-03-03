@@ -1,5 +1,5 @@
-const Ster = require('.')
-const app = new Ster()
+const Theodore = require('.')
+const app = new Theodore()
 
 app.get('/', (req, res, params) => res.send('hello world', 200))
 app.get('/status', (req, res, params) => res.send('OK', 200))
