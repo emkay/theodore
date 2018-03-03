@@ -59,7 +59,12 @@ class Theodore {
 
   listen (port) {
     this.port = port || process.env.PORT || 8080
-    turbo.createServer(this.router.start()).listen(this.port)
+    this.server = turbo.createServer(this.router.start())
+    this.server.listen(this.port)
+  }
+
+  close () {
+    this.server.close()
   }
 }
 
