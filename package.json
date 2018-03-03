@@ -1,0 +1,39 @@
+{
+  "name": "theodore",
+  "version": "1.0.0",
+  "description": "http framework",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "fast-safe-stringify": "^2.0.3",
+    "server-router": "^6.0.0",
+    "standard": "^11.0.0",
+    "standard-version": "^4.3.0",
+    "turbo-http": "^0.1.1",
+    "weallbehave": "^1.2.0",
+    "weallcontribute": "^1.0.8"
+  },
+  "devDependencies": {
+    "tap": "^11.1.1"
+  },
+  "scripts": {
+    "release": "npm test && standard-version && git push origin master && npm publish",
+    "test": "tap test/*.js --100 && standard",
+    "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
+    "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emkay/theodore.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Michael Matuzak",
+    "email": "mmatuzak@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emkay/theodore/issues"
+  },
+  "homepage": "https://github.com/emkay/theodore#readme"
+}
