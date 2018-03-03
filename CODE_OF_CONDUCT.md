@@ -65,7 +65,11 @@ Once the maintainers get involved, they will follow a documented series of steps
 
 ### Contacting Maintainers
 
-Refer to the GitHub repository for collaborator/maintainer information and email someone there.
+You may get in touch with the maintainer team through any of the following methods:
+
+  * Through email:
+    * [mmatuzak@gmail.com](mailto:mmatuzak@gmail.com) (Michael Matuzak)
+
 ### Further Enforcement
 
 If you've already followed the [initial enforcement steps](#enforcement), these are the steps maintainers will take for further enforcement, as needed:
