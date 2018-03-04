@@ -2,6 +2,7 @@
 
 http framework
 
+[![Build Status](https://travis-ci.org/emkay/theodore.svg?branch=master)](https://travis-ci.org/emkay/theodore)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/conventional-changelog/standard-version)
 
