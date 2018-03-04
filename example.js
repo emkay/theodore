@@ -4,5 +4,13 @@ const app = new Theodore()
 app.get('/', (req, res, params) => res.send('hello world', 200))
 app.get('/status', (req, res, params) => res.send('OK', 200))
 app.get('/cats', (req, res, params) => res.json(['theodore', 'sally', 'glory'], 200))
+app.post('/cats', (req, res, params) => {
+  console.log('req.body:', req.body)
+  res.send('OK', 200)
+})
+
+app.get('/hello/:name', (req, res, params) => {
+  res.send(`hello ${params.name}!`, 200)
+})
 
 app.listen()
