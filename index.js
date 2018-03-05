@@ -8,7 +8,7 @@ const jsonParse = require('fast-json-parse')
 class Theodore {
   constructor (opts) {
     this.opts = opts || {}
-    this.router = serverRouter({ default: '/notFoundHandlerRoute' })
+    this.router = serverRouter()
   }
 
   get (route, handler) {
@@ -28,7 +28,7 @@ class Theodore {
   }
 
   route (method, route, handler) {
-    const _handler = async (req, res, params) => {
+    const _handler = (req, res, params) => {
       const headers = req.getAllHeaders()
       const type = headers.get('Content-Type')
 

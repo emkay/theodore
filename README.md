@@ -22,3 +22,25 @@ app.get('/cats', (req, res, params) => res.json(['theodore', 'sally', 'glory'], 
 
 app.listen()
 ```
+
+## API
+
+#### `app = new Theodore()`
+
+Create a new server.
+
+#### `app.{get,post,put,delete}(route, handler(req, res, params))`
+
+Create a route that matches the method and `route`.
+
+#### `req.body`
+
+If the request has a body it will be parsed based on content type and placed in `req.body`.
+
+#### `res.json(json, statusCode)`
+
+Will set the content type and stringify the JSON for you.
+
+#### `res.send(data, statusCode)`
+
+Send a response down the line.
