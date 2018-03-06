@@ -41,9 +41,10 @@ class Theodore {
 
         headers = headers || {}
 
-        Object.keys(headers).forEach(header => {
-          res.setHeader(header, headers[header])
-        })
+        const keys = Object.keys(headers)
+        for (var i = 0; i <= keys.length; i++) {
+          res.setHeader(keys[i], headers[keys[i]])
+        }
 
         res.setHeader('content-length', data.length)
         res.end(data)
