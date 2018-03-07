@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/emkay/theodore/compare/v1.1.0...v1.2.0) (2018-03-07)
+
+
+### Features
+
+* **tests:** :100: test coverage ([2feb336](https://github.com/emkay/theodore/commit/2feb336))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/emkay/theodore/compare/v1.0.5...v1.1.0) (2018-03-06)
 
