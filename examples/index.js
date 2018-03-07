@@ -1,4 +1,4 @@
-const Theodore = require('.')
+const Theodore = require('..')
 const app = new Theodore()
 
 app.get('/', (req, res, params) => res.send('hello world', 200))

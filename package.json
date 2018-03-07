@@ -20,8 +20,9 @@
     "weallcontribute": "^1.0.8"
   },
   "scripts": {
+    "cover": "tap test/*.js --coverage-report=html",
     "release": "npm test && standard-version && git push origin master && npm publish",
-    "test": "tap test/*.js && standard",
+    "test": "tap test/*.js --100 && standard",
     "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
     "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
   },

@@ -29,16 +29,14 @@ class Theodore {
 
   route (method, route, handler) {
     const _handler = (req, res, params) => {
-      const headers = req.getAllHeaders()
-      const type = headers.get('Content-Type')
+      const reqHeaders = req.getAllHeaders()
+      const type = reqHeaders.get('Content-Type')
 
       res.send = (data, status, headers) => {
         data = data || ''
         data = Buffer.isBuffer(data) ? data : Buffer.from(data)
 
-        status = status || res.statusCode
         res.statusCode = status
-
         headers = headers || {}
 
         const keys = Object.keys(headers)
@@ -47,7 +45,7 @@ class Theodore {
         }
 
         res.setHeader('content-length', data.length)
-        res.end(data)
+        res.write(data)
       }
 
       res.json = (json, status, headers) => {
@@ -70,10 +68,7 @@ class Theodore {
         switch (type) {
           case 'application/json':
             const parsedRes = jsonParse(b)
-            if (parsedRes.err) {
-              console.error(Error(parsedRes.err))
-            }
-            req.body = parsedRes.value
+            req.body = parsedRes.value || parsedRes.err
             break
           case 'application/x-www-form-urlencoded':
             req.body = qs.parse(b)
