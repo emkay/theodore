@@ -1,4 +1,3 @@
-require('dotenv').config()
 const qs = require('querystring')
 const turbo = require('turbo-http')
 const serverRouter = require('server-router')
