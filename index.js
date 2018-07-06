@@ -86,6 +86,10 @@ class Theodore {
     this.router.route(method, route, _handler)
   }
 
+  address () {
+    return (this.server && this.server.address())
+  }
+
   listen (port, onlisten = () => {}) {
     this.port = port || process.env.PORT || 8080
     this.server = turbo.createServer(this.router.start())

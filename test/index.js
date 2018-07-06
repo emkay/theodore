@@ -153,3 +153,17 @@ test('bad json data', async t => {
 
   app.close()
 })
+
+test('get address', t => {
+  t.plan(1)
+
+  const app = new Theo()
+  app.get('/', (req, res, params) => res.send(''))
+  app.listen(8080, () => {
+    const address = app.address()
+
+    t.equal(typeof address, 'object')
+
+    app.close()
+  })
+})
