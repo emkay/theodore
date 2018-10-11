@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/emkay/theodore/compare/v1.4.0...v1.5.0) (2018-10-11)
+
+
+### Features
+
+* onrequest ([7b90f81](https://github.com/emkay/theodore/commit/7b90f81))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/emkay/theodore/compare/v1.3.0...v1.4.0) (2018-07-06)
 
