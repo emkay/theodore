@@ -3,7 +3,7 @@ const test = require('tap').test
 const bent = require('bent')
 
 test('basic routes', async t => {
-  t.plan(9)
+  t.plan(15)
 
   const app = new Theo()
   app.get('/', (req, res, params) => {
@@ -24,7 +24,7 @@ test('basic routes', async t => {
     res.send('delete hello', 200)
   })
 
-  app.listen(8080, () => t.ok('onlisten'))
+  app.listen(8080, () => t.ok('onlisten'), () => t.ok('onrequest'))
 
   let data
 
