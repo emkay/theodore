@@ -1,0 +1,8 @@
+perf
+.nyc_output
+.travis.yml
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+coverage
+examples
+test
