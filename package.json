@@ -13,7 +13,7 @@
     "bent": "^1.1.0",
     "standard": "^11.0.0",
     "standard-version": "^4.3.0",
-    "tap": "^12.0.1",
+    "tap": "^14.2.2",
     "weallbehave": "^1.2.0",
     "weallcontribute": "^1.0.8"
   },
